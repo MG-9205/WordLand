@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Edu+SA+Beginner:wght@600&family=Gloria+Hallelujah&family=Kalam:wght@700&family=Kanit:wght@300&family=Montserrat&family=Poppins:wght@100&display=swap");
+
+:root {
+  --var1: #ffffff66;
+}
+
+.nav_body {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  padding: 0 20px 0 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.nav_logo {
+  width: 70px;
+  height: 55px;
+}
+
+.nav_div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav_ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  
+}
+
+.nav_ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.05rem;
+}
+
+.nav_ul li {
+  border-radius: 50px;
+  padding: 8px 16px 8px 18px;
+  cursor: pointer;
+}
+
+.nav_hover:hover {
+  background-color: var(--var1);
+}
+
+.searchbox {
+  padding: 8px 15px 8px 8px;
+  background-color: var(--var1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.searchbox input {
+  height: 28px;
+  width: 150px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  transition: all 1s linear;
+}
+
+.icon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.login_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  background-color: var(--var1);
+  border-radius: 50px;
+  gap: 7px;
+}
+
+.login_btn {
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.793);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.login_btn_icon {
+  font-size: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.793);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.option_list {
+  position: relative;
+}
+
+.course_list {
+  display: none;
+  position: absolute;
+  top: 45px;
+  color: black;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.course_list li {
+  color: white;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+}
+
+.course_list li a {
+  font-size: 1rem;
+}
+.Genre_list{
+  position: absolute;
+  top: 45px;
+  display: none;
+  justify-content:flex-start;
+  align-items:center;
+ flex-wrap: wrap;
+  gap: 15px;
+  width: 350px;
+  padding: 10px 0px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav_body a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  width: 100%;
+  border-radius: 0;
+}
+.Genre_list li{
+  list-style: none;
+  width: 25%;
+}
+.Genre_list a:hover{
+color: red;
+}
+/*mobile menu bar*/
+.mobile_menu{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 70%;
+  min-height: 100vh;
+  max-height: fit-content;
+  transform: translateX(100%);
+  transition: all 1s linear;
+
+}
+.mobile_menu_ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding:20px 0 20px 30px ;
+}
+.mobile_icon{
+  display: none;
+
+}
+.icon{
+  font-size: 25px;
+}
+.mobile_menu_special_li div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile_menu_special_li div div{
+  border: 1px solid white;
+  height: 15px;
+  padding: 2px;
+}
+.option{
+height: 0px;
+padding: 0px;
+overflow: hidden;
+list-style: none;
+}
+.option li{
+  padding: 5px 0 10px 30px;
+}
+
+@media screen and (max-width:888px) {
+  .nav_ul{
+    display: none;
+  }
+  .login_div{
+    display: none;
+  }
+  .searchbox input{
+    width: 0;
+  }
+  .mobile_icon{
+    display: inline;
+  }
+  .searchbox{
+    background-color:transparent;
+  }
+  .nav_div{
+    gap: 0px;
+  }
+  .nav_body{
+    padding: 0 5px 0 10px;
+  }
+  .mobile_menu{
+    display: block;
+  }
+
+ 
+}
