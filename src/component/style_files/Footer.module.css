@@ -1,0 +1,80 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script&family=Edu+SA+Beginner:wght@600&family=Gloria+Hallelujah&family=Kalam:wght@700&family=Kanit:wght@300&family=Montserrat&family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Edu+SA+Beginner:wght@600&family=Gloria+Hallelujah&family=Kalam:wght@700&family=Kanit:wght@300&family=Montserrat&family=Poppins:wght@100&display=swap");
+.main_div{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center
+
+}
+.main{
+
+}
+.sub_div1{
+ display:  flex;
+ padding-top: 30px;
+gap: 10vw;
+}
+.div1{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+}
+.div1_img{
+
+}
+.div1_content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.div1_content :nth-child(1){
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.div1_content :nth-child(2){
+    font-family:Dancing Script ;
+    font-size: 1.7rem;
+    font-weight: 10;
+    width: 690px;
+}
+.div2{
+    display: flex;
+    gap: 50px;
+
+}
+.div2 ul{
+    padding-top: 8px;
+    list-style: none;
+}
+.div2 ul li{
+    padding: 5px 0;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+.sub_div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0 30px 0;
+}
+.developer_info h4{
+    padding: 5px 0;
+}
+.developer_info div{
+    font-size: 1.6rem;
+    display: flex;
+    gap: 25px;
+}
+.rights{
+    display: flex;
+    padding-top: 20px;
+    gap: 5px;
+}
